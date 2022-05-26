@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  background-color:#cadff2;
+  border: 5px solid #766cf9;
+  width:400px;
+}
+
+.bilgi{
+  background-color:#cadff2;
+  border: 5px solid #766cf9;
+  width:800px;
+}
+#greenid{
+  color: green;;
+}
+
+#redid{
+  color:red;
+}

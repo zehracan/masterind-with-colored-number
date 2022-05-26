@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>Sayı Tahmini Oyunu</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+
+<body>
+  <div class="bilgi">
+   <h2>Sayı Tahmini Oyunu</h2>
+    <h4 style="color:darkblue;">Nasıl Oynanır?</h4>
+      <p style="padding-left:5px;">Bilgisayarın tuttuğu sayıyı tahmin etmek için 4 basamaklı sayı girin</p>
+    <ul>
+      <li>Bilgisayar 4 basamağı da farklı rakamlardan oluşan bir sayı tutar</li>
+      <li>Bu sayı 0 ile başlayamaz</li>
+      <li>Tahmininizdeki rakamlardan yeri doğru olan her rakam için pozitif değer 1 arttırılır.</li>
+      <li>Tahmininizdeki rakamlardan sayı içinde bulunan ancak yeri doğru olmayan her rakam için negatif değer 1 arttırılır.</li>
+      <li>Eğer tahmininizdeki rakamlar sayıda bulunmuyorsa bilgi verilmez.</li>
+    </ul>
+    <p style="padding-left:5px;">Örneğin 5467 sayısı için 8769 tahmininin sonucu <br>pozitif: 1 (6 değeri doğru yerde) ve negatif:1(7 değeri sayı içinde var ancak yanlış yerde) olacaktır.</p>
+  </div>
+
+<div class="container" id="Game" >
+
+<p> 
+Tuttuğum sayı: <span class = "number" id="class">xxxx</span>
+<button  id = "newGame" onclick="reloadPage()">Tekrar Oyna!</button>
+</p>
+
+<p></p>
+<div></div>
+<p> Kalan Hak: <span class ="turns" id="renk">10</span></p>
+
+<div class = "form">
+Tahmmininizi Girin:<input type = "text" name = "player" autocomplete="off" id = "player" >
+<input type = "button" name = "Ok" id = "guess" value = "Tahmin et" onclick="guess()">
+
+</div>
+
+<div class = "table">
+  <div class = "turnsLog" id="turnsLog">
+  </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+
+
+</head>
+</body>
+</html>
